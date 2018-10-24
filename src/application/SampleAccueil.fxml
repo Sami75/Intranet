@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label layoutX="344.0" layoutY="75.0" text="Accueil">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="73.0" layoutY="58.0" text="Nom" />
+      <Label layoutX="73.0" layoutY="92.0" text="Prénom" />
+      <Label layoutX="73.0" layoutY="126.0" text="Classe" />
+      <Separator layoutX="6.0" layoutY="187.0" prefHeight="0.0" prefWidth="778.0" />
+      <Separator layoutX="163.0" layoutY="190.0" orientation="VERTICAL" prefHeight="410.0" prefWidth="5.0" />
+      <Button layoutX="37.0" layoutY="210.0" mnemonicParsing="false" onAction="#menu1" prefHeight="51.0" prefWidth="110.0" text="Messagerie" />
+      <Button layoutX="37.0" layoutY="307.0" mnemonicParsing="false" onAction="#menu2" prefHeight="51.0" prefWidth="110.0" text="Pointage" />
+      <Button layoutX="38.0" layoutY="395.0" mnemonicParsing="false" onAction="#menu3" prefHeight="51.0" prefWidth="110.0" text="Vos informations" />
+      <Button layoutX="37.0" layoutY="485.0" mnemonicParsing="false" onAction="#menu4" prefHeight="51.0" prefWidth="110.0" text="OwnCloud" />
+      <Separator layoutX="6.0" layoutY="285.0" prefHeight="3.0" prefWidth="159.0" />
+      <Separator layoutX="6.0" layoutY="379.0" prefHeight="3.0" prefWidth="159.0" />
+      <Separator layoutX="6.0" layoutY="467.0" prefHeight="3.0" prefWidth="159.0" />
+      <AnchorPane fx:id="menu" layoutX="178.0" layoutY="200.0" prefHeight="387.0" prefWidth="471.0" />
+   </children>
+</AnchorPane>
