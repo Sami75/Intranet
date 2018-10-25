@@ -1,5 +1,6 @@
 package application;
 	
+import back.Passerelle;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -23,6 +24,8 @@ public class Main extends Application {
 	}
 	
 	public static void main(String[] args) {
+		new Passerelle();
+		Passerelle.open();
 		launch(args);
 	}
 }

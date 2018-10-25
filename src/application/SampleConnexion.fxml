@@ -16,8 +16,8 @@
       </Label>
       <Label layoutX="381.0" layoutY="187.0" text="Identifiant" />
       <Label layoutX="372.0" layoutY="292.0" text="Mot de Passe" />
-      <TextField layoutX="334.0" layoutY="230.0" />
-      <PasswordField layoutX="334.0" layoutY="342.0" />
+      <TextField fx:id="login" layoutX="334.0" layoutY="230.0" />
+      <PasswordField fx:id="password" layoutX="334.0" layoutY="342.0" />
       <Button layoutX="372.0" layoutY="412.0" mnemonicParsing="false" onAction="#connexion" text="Connexion" />
    </children>
 </AnchorPane>
