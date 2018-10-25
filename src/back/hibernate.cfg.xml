@@ -17,8 +17,8 @@
         <property name="jta.UserTransaction">
         	java:comp/UserTransaction</property>
         <mapping class="recours.User" />
-        <mapping class="recours.Eleve" />
-        <mapping class="recours.Prof" />
+<!--         <mapping class="recours.Eleve" />
+        <mapping class="recours.Prof" /> -->
         <mapping class="recours.Pointage" />
     </session-factory>
 </hibernate-configuration>

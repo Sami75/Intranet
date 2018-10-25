@@ -22,7 +22,7 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	protected int id;
 	
-	private String login, password, nom, prenom, adresse, ville, mail, status;
+	private String login, password, nom, prenom, adresse, ville, mail, status, classe;
 	
 	private int cdp, tel;
 	

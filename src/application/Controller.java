@@ -13,7 +13,6 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import recours.User;
-import back.Connexion;
 import back.Passerelle;
 
 public class Controller {
@@ -27,16 +26,16 @@ public class Controller {
 	@FXML
 	private PasswordField password;
 	@FXML
-	private TextField a;
+	private TextField montext;
 	
 	public void connexion() throws IOException {
 
 		User user = Passerelle.login(login.getText(), password.getText());
 		System.out.println("La connexion a été effectuée " + user.getNom());
 		AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("SampleAccueil.fxml"));
-		anchor.getChildren().setAll(root);
-		a.setText("hello");
-
+		anchor.getChildren().clear();
+		anchor.getChildren().add(root);
+		montext.setText("juoi");
 	}
 	
 	public void menu1() throws IOException {

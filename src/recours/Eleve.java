@@ -13,10 +13,9 @@ import org.hibernate.annotations.SortNatural;
 import back.Passerelle;
 
 @Entity
-@PrimaryKeyJoinColumn(name = "idUser")
 public class Eleve extends User {
 
-	private String classe;
+	private String classe, nom, prenom, adresse, ville, mail, status;
 	
 	private int idCard;
 }

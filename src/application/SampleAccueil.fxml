@@ -27,6 +27,6 @@
       <Separator layoutX="6.0" layoutY="379.0" prefHeight="3.0" prefWidth="159.0" />
       <Separator layoutX="6.0" layoutY="467.0" prefHeight="3.0" prefWidth="159.0" />
       <AnchorPane fx:id="menu" layoutX="178.0" layoutY="200.0" prefHeight="387.0" prefWidth="471.0" />
-      <TextField fx:id="a" layoutX="128.0" layoutY="67.0" text="sqaz" />
+      <TextField fx:id="montext" layoutX="128.0" layoutY="67.0" />
    </children>
 </AnchorPane>
