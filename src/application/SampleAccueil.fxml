@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -26,5 +27,7 @@
       <Separator layoutX="6.0" layoutY="379.0" prefHeight="3.0" prefWidth="159.0" />
       <Separator layoutX="6.0" layoutY="467.0" prefHeight="3.0" prefWidth="159.0" />
       <AnchorPane fx:id="menu" layoutX="178.0" layoutY="200.0" prefHeight="387.0" prefWidth="471.0" />
+      <Hyperlink layoutX="60.0" layoutY="551.0"  text="OwnCloud" />
+      <Button layoutX="35.0" layoutY="14.0" mnemonicParsing="false" opacity="0.0" prefHeight="25.0" prefWidth="110.0" text="Button" />
    </children>
 </AnchorPane>

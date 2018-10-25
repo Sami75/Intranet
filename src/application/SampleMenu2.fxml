@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="menu" prefHeight="360.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
-      <Label layoutX="184.0" layoutY="32.0" prefHeight="30.0" prefWidth="119.0" text="Pointage">
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="176.0" layoutY="30.0" prefHeight="30.0" prefWidth="119.0" text="Pointage">
          <font>
             <Font size="20.0" />
          </font>
       </Label>
-      <TextArea layoutX="71.0" layoutY="82.0" prefHeight="246.0" prefWidth="344.0" text="Ici apparaissent les informations Relatives au pointages.&#10;" />
+      <TableView layoutX="16.0" layoutY="71.0" prefHeight="275.0" prefWidth="439.0">
+        <columns>
+          <TableColumn prefWidth="142.0" text="Nom" />
+          <TableColumn prefWidth="152.0" text="Date" />
+            <TableColumn prefWidth="144.0" text="Heure" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>
