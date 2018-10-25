@@ -1,12 +1,20 @@
 package application;
 
 import java.awt.Desktop;
+
 import java.io.IOException;
 import java.net.URL;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import recours.User;
+import back.Connexion;
+import back.Passerelle;
 
 public class Controller {
 
@@ -14,11 +22,21 @@ public class Controller {
 	private AnchorPane anchor;
 	@FXML
 	private AnchorPane menu;
+	@FXML
+	private TextField login;
+	@FXML
+	private PasswordField password;
+	@FXML
+	private TextField a;
 	
 	public void connexion() throws IOException {
+
+		User user = Passerelle.login(login.getText(), password.getText());
+		System.out.println("La connexion a été effectuée " + user.getNom());
 		AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("SampleAccueil.fxml"));
 		anchor.getChildren().setAll(root);
-		System.out.println("La connexion a été effectuée");
+		a.setText("hello");
+
 	}
 	
 	public void menu1() throws IOException {
