@@ -12,6 +12,6 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <TextArea layoutX="71.0" layoutY="82.0" prefHeight="246.0" prefWidth="344.0" text="Ici apparaissent vos informations personnelles .&#10;" />
+      <TextArea fx:id="fokk" layoutX="71.0" layoutY="82.0" prefHeight="246.0" prefWidth="344.0" />
    </children>
 </AnchorPane>

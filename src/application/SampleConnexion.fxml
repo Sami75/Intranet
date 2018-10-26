@@ -7,17 +7,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchor" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+<AnchorPane fx:id="anchor" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
-      <Label layoutX="344.0" layoutY="75.0" text="ReCours">
+      <Label layoutX="400.0" layoutY="75.0" text="ReCours">
          <font>
             <Font size="35.0" />
          </font>
       </Label>
-      <Label layoutX="381.0" layoutY="187.0" text="Identifiant" />
-      <Label layoutX="372.0" layoutY="292.0" text="Mot de Passe" />
-      <TextField fx:id="login" layoutX="334.0" layoutY="230.0" />
-      <PasswordField fx:id="password" layoutX="334.0" layoutY="342.0" />
-      <Button layoutX="372.0" layoutY="412.0" mnemonicParsing="false" onAction="#connexion" text="Connexion" />
+      <Label layoutX="440.0" layoutY="180.0" text="Identifiant" />
+      <Label layoutX="440.0" layoutY="290.0" text="Mot de Passe" />
+      <TextField fx:id="login" layoutX="400.0" layoutY="230.0" />
+      <PasswordField fx:id="password" layoutX="400.0" layoutY="342.0" />
+      <Button layoutX="400.0" layoutY="412.0" mnemonicParsing="false" onAction="#connexion" prefHeight="25.0" prefWidth="149.0" text="Connexion" />
    </children>
 </AnchorPane>

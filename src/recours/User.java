@@ -42,4 +42,9 @@ public class User {
 		return nom;
 	}
 	
+	public String getPrenom() {
+		
+		return prenom;
+	}
+	
 }

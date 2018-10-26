@@ -106,9 +106,15 @@ public class Passerelle {
 		query.setParameter("login", login);
 		query.setParameter("password", password);
 		System.out.println(query);
+		User user = new User();
 		List<T> userList = query.list();
-		User user = (User)userList.get(0);
-		System.out.println(user);
+		try{
+			user = (User)userList.get(0);
+			System.out.println(user);
+		}
+		catch(RuntimeException f) {
+			System.out.println("Le nom d'utilisateur et/ou le mot de passe sont incorrects");
+		}
 		return user;
 	}
 
